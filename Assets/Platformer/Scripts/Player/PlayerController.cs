@@ -100,10 +100,13 @@ public class PlayerController : MonoBehaviour
         
         foreach (Collider2D hit in hits)
         {
+            Bullet bullet = hit.GetComponent<Bullet>();
+            
             //In 2d the gameobject can hit itself, (hit would be this gameobject the code
             //is attached to)
             //in 3d the gameobject cant hit itself
-            if (hit.gameObject != gameObject)
+            if (hit.gameObject != gameObject 
+                && bullet == null)
             {
                 return true;
             }

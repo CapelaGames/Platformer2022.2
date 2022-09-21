@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2693989937065359246}
   - component: {fileID: 2693989937065359245}
   - component: {fileID: 2411600437112477634}
+  - component: {fileID: 8745756292153184072}
   m_Layer: 0
   m_Name: Bee
   m_TagString: Untagged
@@ -133,7 +134,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2411600437112477634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,3 +147,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547ba890c05704b269084ce2bb83f4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _MaxHealth: 5
+  _CurrentHealth: 5
+--- !u!114 &8745756292153184072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2693989937065359234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb37e48934a6193ad9760221092e02d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1
+  _isMovingRight: 1
+  _leftXBoundsOffset: -1
+  _rightXBoundsOffset: 1
